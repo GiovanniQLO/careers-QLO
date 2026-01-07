@@ -66,35 +66,32 @@
                 <h5 class="text-primary-custom mb-3">QUICK LINKS</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">About Us</a>
+                        <a href="https://www.quirogalawoffice.com/" class="text-light text-decoration-none">About Us</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Services</a>
+                        <a href="./jobs" class="text-light text-decoration-none">Careers</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Careers</a>
+                        <a href="https://www.quirogalawoffice.com/blog/" class="text-light text-decoration-none">Blog</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Blog</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="text-light text-decoration-none">Contact</a>
+                        <a href="https://www.quirogalawoffice.com/quiroga-law-office-contact-immigration-lawyer/" class="text-light text-decoration-none">Contact</a>
                     </li>
                 </ul>
                 
                 <h5 class="text-primary-custom mt-4 mb-3">FOLLOW US</h5>
                 <div class="d-flex">
-                    <a href="#" class="text-light me-3">
+                    <a href="https://www.facebook.com/QuirogaLawOffice" class="text-light me-3">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="text-light me-3">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://www.instagram.com/quiroga_law/#" class="text-light me-3">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-light me-3">
+                    <a href="https://www.linkedin.com/company/quirogalawoffice" class="text-light me-3">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#" class="text-light">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://www.quirogalawoffice.com/" class="text-light">
+                        <i class="fas fa-globe"></i>
                     </a>
                 </div>
             </div>
