@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #F8941D;
+    --secondary-color: #85483C;
+    --primary-light: #F8941D33;
+    --secondary-light: #85483C33;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.google-jobs-container {
+    padding: 20px 0;
+}
+
+.google-jobs-tabs {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #eee;
+}
+
+.nav-tabs .nav-link {
+    color: #666;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.google-jobs-layout {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 80vh;
+    background: #fff;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.google-jobs-layout:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.google-jobs-list {
+    width: 40%;
+    border-right: 1px solid #e1e1e1;
+    overflow-y: auto;
+    background: #fafafa;
+    transition: background 0.3s ease;
+}
+
+.google-jobs-detail {
+    width: 60%;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fff;
+    transition: background 0.3s ease;
+    min-height: 0; /* Allows flex child to shrink */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .google-jobs-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .google-jobs-list {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .google-jobs-detail {
+        width: 100%;
+        min-height: 50vh;
+        padding: 15px;
+    }
+
+    .job-detail-title {
+        font-size: 1.2em;
+        word-break: break-word;
+        margin-top: 0;
+    }
+
+    .job-detail-company {
+        font-size: 1em;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 576px) {
+    .google-jobs-list {
+        height: 50vh;
+    }
+
+    .google-jobs-detail {
+        min-height: 60vh;
+    }
+
+    .job-detail-actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .job-detail-actions .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .job-detail-actions .btn:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+/* Ensure job details content is properly spaced */
+.job-details {
+    width: 100%;
+    text-align: left;
+    padding-right: 10px; /* Account for scrollbar */
+}
+
+.job-detail-title {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.google-job-card {
+    padding: 18px;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.google-job-card:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(248, 148, 29, 0.1);
+    border-left: 4px solid var(--primary-color);
+}
+
+.google-job-card.active {
+    background: var(--primary-light);
+    border-left: 4px solid var(--primary-color);
+}
+
+.google-job-card .job-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.google-job-card .job-company {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.google-job-card .job-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.badge {
+    font-size: 0.75em;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.badge-type {
+    background-color: #fef7ee;
+    color: #F8941D;
+    border-color: #fbe1c2;
+}
+
+.badge-remote {
+    background-color: #fef7ee;
+    color: #F8941D;
+    border-color: #fbe1c2;
+}
+
+.badge-urgent {
+    background-color: #fdeeee;
+    color: #85483C;
+    border-color: #f4c9c3;
+}
+
+.google-job-card .job-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.google-job-card .job-meta span {
+    color: var(--primary-color);
+}
+
+.google-job-card .job-meta i {
+    color: #777;
+    margin-right: 4px;
+}
+
+.google-job-card .job-short {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.no-results {
+    padding: 40px 20px;
+}
+
+.no-results h4 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.no-results p {
+    color: #777;
+}
+
+#jobDetailPlaceholder {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #999;
+    font-style: italic;
+    text-align: left;
+}
+
+.job-details {
+    width: 100%;
+    text-align: left;
+}
+
+.job-detail-title {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.job-detail-company {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.job-detail-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.job-detail-badges {
+    margin-bottom: 20px;
+}
+
+.job-detail-description {
+    margin-bottom: 25px;
+}
+
+.job-detail-description h5 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.job-detail-description p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.job-detail-actions {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #e58418;
+    border-color: #e58418;
+}
+
+.btn-outline-secondary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.badge-detail {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background-color: #fef7ee;
+    color: #F8941D;
+    border: 1px solid #fbe1c2;
+    border-radius: 12px;
+}
+
+.skill-tag, .language-tag {
+    background-color: #fef7ee;
+    color: #F8941D;
+    border: 1px solid #fbe1c2;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.job-detail-skills h5,
+.job-detail-languages h5 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}       

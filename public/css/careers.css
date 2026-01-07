@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #F8941D;
+    --secondary-color: #85483C;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-primary-custom { 
+    background-color: #F8941D !important; 
+}
+
+.bg-secondary-custom { 
+    background-color: #85483C !important; 
+}
+
+.text-primary-custom { 
+    color: #F8941D !important; 
+}
+
+.text-secondary-custom { 
+    color: #85483C !important; 
+}
+
+.btn-primary-custom { 
+    background-color: #F8941D; 
+    border-color: #F8941D;
+    color: white;
+}
+
+.btn-primary-custom:hover { 
+    background-color: #e58518; 
+    border-color: #e58518;
+}
+
+.btn-secondary-custom { 
+    background-color: #85483C; 
+    border-color: #85483C;
+    color: white;
+}
+
+.btn-secondary-custom:hover { 
+    background-color: #733c32; 
+    border-color: #733c32;
+}
