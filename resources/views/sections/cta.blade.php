@@ -6,7 +6,7 @@
                 <p class="lead mb-0">Join our team and take the next step in your professional development.</p>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
-                <a href="#positions" class="btn btn-primary-custom btn-lg">View Open Positions</a>
+                <a href="/jobs" class="btn btn-primary-custom btn-lg">View Open Positions</a>
             </div>
         </div>
     </div>

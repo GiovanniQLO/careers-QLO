@@ -7,7 +7,6 @@
     @include('sections.hero')
     @include('sections.why-us')
     @include('sections.testimonials')
-    @include('sections.positions')
     @include('sections.culture')
     @include('sections.cta')
 </div>
