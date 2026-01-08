@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 mb-4 mb-md-0">
-                <h5 class="text-primary-custom mb-3">COMPANY NAME</h5>
-                <img src="https://via.placeholder.com/200x100/F8941D/ffffff?text=Logo" alt="Company Logo" class="img-fluid mb-3" style="max-height: 80px;">
+                <h5 class="text-primary-custom mb-3">QUIROGA LAW OFFICE, PLLC</h5>
+                <img src="https://careers.quirogalawoffice.com/company/logo/QLO-oficial.png" alt="Company Logo" class="img-fluid mb-3" style="max-height: 80px;">
                 <p class="text-light">Building the future with talented professionals who drive innovation and excellence.</p>
             </div>
             
@@ -56,8 +56,12 @@
                         <a href="tel:+15092553522" class="text-light text-decoration-none">(509) 255-3522</a>
                     </li>
                     <li class="mb-2">
-                        <i class="fas fa-envelope me-2 text-primary-custom"></i>
-                        <a href="mailto:info@company.com" class="text-light text-decoration-none">info@company.com</a>
+                        <i class="fas fa-calendar me-2 text-primary-custom"></i>
+                        <a href="https://www.quirogalawoffice.com/request-a-consultation/" class="text-light text-decoration-none">Request a Consultation</a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-phone me-2 text-primary-custom"></i>
+                        <a href="https://www.quirogalawoffice.com/request-a-callback/" class="text-light text-decoration-none">Request a Callback</a>
                     </li>
                 </ul>
             </div>
@@ -106,10 +110,10 @@
             <div class="col-md-6 text-center text-md-end">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item me-3">
-                        <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+                        <a href="https://www.quirogalawoffice.com/privacy-policy/" class="text-light text-decoration-none">Privacy Policy</a>
                     </li>
                     <li class="list-inline-item me-3">
-                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                        <a href="https://www.quirogalawoffice.com/disclaimer/" class="text-light text-decoration-none">Disclaimer</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#" class="text-light text-decoration-none">Sitemap</a>

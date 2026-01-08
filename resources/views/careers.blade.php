@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Careers')
+@section('title', 'Careers | Quiroga Law Office')
 
 @section('content')
 <div class="container-fluid">
