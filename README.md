@@ -54,6 +54,74 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+## Deployment Instructions
+
+### Prerequisites
+- Web server with PHP >= 8.0
+- Composer
+- Database (MySQL, PostgreSQL, SQLite, or SQL Server)
+- Node.js and npm (for asset compilation)
+
+### Steps to Deploy
+
+1. **Upload Files**
+   - Upload all project files to your web server's document root
+
+2. **Install Dependencies**
+   ```bash
+   composer install --optimize-autoloader --no-dev
+   ```
+
+3. **Environment Configuration**
+   - Copy `.env.example` to `.env`
+   - Configure your database settings in `.env`
+   - Generate application key:
+     ```bash
+     php artisan key:generate
+     ```
+
+4. **Database Setup**
+   - Run migrations to create database tables:
+     ```bash
+     php artisan migrate --force
+     ```
+   - Seed database if needed:
+     ```bash
+     php artisan db:seed
+     ```
+
+5. **Directory Permissions**
+   - Ensure the following directories are writable:
+     - `storage/`
+     - `bootstrap/cache/`
+
+6. **Asset Compilation**
+   - Install Node.js dependencies:
+     ```bash
+     npm install
+     ```
+   - Compile assets for production:
+     ```bash
+     npm run build
+     ```
+   - Or for development:
+     ```bash
+     npm run dev
+     ```
+
+7. **Web Server Configuration**
+   - Point your web server's document root to the `/public` directory
+   - Configure URL rewriting (see Laravel documentation for Apache/Nginx configurations)
+
+8. **Additional Configuration**
+   - Clear caches:
+     ```bash
+     php artisan config:clear
+     php artisan cache:clear
+     php artisan route:clear
+     php artisan view:clear
+     ```
+     
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
